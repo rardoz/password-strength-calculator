@@ -1,0 +1,28 @@
+{
+  "name": "password-strength-calculator",
+  "version": "1.0.0",
+  "description": "The strongest password strength calculator EVER!",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rardoz/password-strength-calculator.git"
+  },
+  "keywords": [
+    "password",
+    "strength",
+    "calculator"
+  ],
+  "author": "RARDOZ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rardoz/password-strength-calculator/issues"
+  },
+  "homepage": "https://github.com/rardoz/password-strength-calculator#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "jest": "^22.2.2"
+  }
+}
