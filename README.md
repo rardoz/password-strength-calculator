@@ -16,9 +16,9 @@ The strongest password strength calculator EVER!
 **JS example**
 
 ```js
-import PasswordStrengthTest from "password-strength-test";
+import PasswordStrength from "password-strength-calculator";
 
-const passTest = new PasswordStrengthTest({ minLength: 10 });
+const passTest = new PasswordStrength({ minLength: 10 });
 const strength = passTest("mypassword");
 
 if (strength < 60) console.log("password is weak");
@@ -29,9 +29,9 @@ else console.log("password is good");
 
 ```jsx
 import React, {Component} from 'react'
-import PasswordStrengthTest from 'password-strength-test'
+import PasswordStrength from 'password-strength-calculator'
 
-const passTest = new PasswordStrengthTest({...})
+const passTest = new PasswordStrength({...})
 const MIN_PASS_STREGTH = 80
 
 export default Form extends Component {
