@@ -1,0 +1,23 @@
+{
+  "extends": "airbnb-base",
+  "parser": "babel-eslint",
+  "plugins": ["jest"],
+  "rules": {
+    "semi": ["error", "never"],
+    "one-var": [
+      "error",
+      {
+        "var": "always",
+        "let": "always",
+        "const": "always"
+      }
+    ],
+    "one-var-declaration-per-line": ["error", "initializations"],
+    "array-element-newline": ["error", "always"],
+    "array-bracket-newline": ["error", { "multiline": true }],
+    "class-methods-use-this": 0
+  },
+  "env": {
+    "jest/globals": true
+  }
+}

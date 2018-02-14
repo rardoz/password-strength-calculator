@@ -1,0 +1,4 @@
+{
+  "presets": ["babel-preset-airbnb", "stage-0"],
+  "plugins": ["transform-object-rest-spread"]
+}
