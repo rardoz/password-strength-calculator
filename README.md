@@ -3,8 +3,7 @@
 The strongest password strength calculator EVER!
 
 [![CircleCI](https://circleci.com/gh/rardoz/password-strength-calculator.svg?style=svg)](https://circleci.com/gh/rardoz/password-strength-calculator)
-
-[![CircleCI](https://raw.githubusercontent.com/rardoz/password-strength-calculator/master/badges/coverage.svg)](https://circleci.com/gh/rardoz/password-strength-calculator)
+[![CircleCI](https://raw.githubusercontent.com/rardoz/password-strength-calculator/master/badges/coverage.svg?sanitize=true)](https://circleci.com/gh/rardoz/password-strength-calculator)
 
 ## Features
 
