@@ -38,5 +38,5 @@ jobs:
           command: "npm run lint"
 
       - run:
-          name: Coverage Report
-          command: "npm run coverage"
+          name: Test JS
+          command: "npm test"

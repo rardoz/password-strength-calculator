@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run lint && jest --no-cache",
-    "coverage": "jest --no-cache --coverage",
+    "coverage": "jest --no-cache --coverage && npm run coverage:badge",
+    "coverage:badge": "lcov-badge-generator ./coverage/lcov.info -o ./badges/coverage.svg",
     "build": "babel src/index.js --out-file index.js",
     "prepublish": "npm test && npm run build",
     "postpublish": "rm -rf index.js",
-    "precommit": "npm test",
+    "precommit": "npm run lint && npm run coverage && git add .",
     "prepush": "npm test",
     "lint": "eslint src/*.js"
   },
@@ -43,6 +44,7 @@
     "eslint-plugin-jest": "^21.12.1",
     "husky": "^0.14.3",
     "jest": "^22.2.2",
+    "lcov-badge-generator": "^1.0.5",
     "prettier": "^1.10.2"
   },
   "dependencies": {}
