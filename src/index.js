@@ -27,9 +27,7 @@ export default class PasswordStrengthTest {
     this.maxLength = props.maxLength || 25
   }
 
-  correctLength(value) {
-    return value.length >= this.minLength && value.length <= this.maxLength
-  }
+  correctLength = value => value.length >= this.minLength && value.length <= this.maxLength
 
   hasJunk = (value) => {
     const lowerValue = value.toLowerCase()
@@ -44,8 +42,6 @@ export default class PasswordStrengthTest {
   }
 
   repeatedCharacters = value => value.match(/([a-zA-Z0-9])\1{1,}/g)
-
-  correctLength = value => !(value.length < 6 || value.length > 24)
 
   passwordStrength = (value) => {
     const i = value.length

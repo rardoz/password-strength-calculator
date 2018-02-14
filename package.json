@@ -4,12 +4,13 @@
   "description": "The strongest password strength calculator EVER!",
   "main": "index.js",
   "scripts": {
-    "test": "jest --no-cache",
+    "test": "npm run lint && jest --no-cache",
     "build": "babel src/index.js --out-file index.js",
     "prepublish": "npm test && npm run build",
     "postpublish": "rm -rf index.js",
     "precommit": "npm test",
-    "prepush": "npm test"
+    "prepush": "npm test",
+    "lint": "eslint src/*.js"
   },
   "jest": {
     "transform": {
