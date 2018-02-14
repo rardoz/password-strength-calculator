@@ -37,5 +37,5 @@ jobs:
       - run: npm test
 
       - run: npm run coverage
-
+      - run: mkdir -p $CIRCLE_ARTIFACTS/coverage
       - run: cp -r coverage $CIRCLE_ARTIFACTS/coverage
