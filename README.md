@@ -41,7 +41,7 @@ export default Form extends Component {
 
   passwordValidation = (event) => {
     const value = event.target.value
-    this.setState({passwordValid: passTest(vaue) >= MIN_PASS_STRENGTH})
+    this.setState({passwordValid: passTest(value) >= MIN_PASS_STRENGTH})
   }
 
   render(){
