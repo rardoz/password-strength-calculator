@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run lint && jest --no-cache",
+    "test:ci": "jest --no-cache --ci --testResultsProcessor=jest-junit",
     "coverage": "jest --no-cache --coverage",
     "build": "babel src/index.js --out-file index.js",
     "prepublish": "npm test && npm run build",
@@ -45,5 +46,7 @@
     "jest": "^22.2.2",
     "prettier": "^1.10.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "jest-junit": "^3.6.0"
+  }
 }

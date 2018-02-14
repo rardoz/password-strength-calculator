@@ -34,7 +34,10 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
         
       # run tests!
-      - run: npm test
-      - run: npm run coverage
-      - run: mkdir -p $CIRCLE_ARTIFACTS/coverage
-      - run: cp -r coverage $CIRCLE_ARTIFACTS/coverage
+      - run: npm test:ci
+
+      - run:
+          name: Jest Suite
+          command: "npm run test:ci"
+          environment:
+            JEST_JUNIT_OUTPUT: "reports/junit/js-test-results.xml"
