@@ -38,4 +38,4 @@ jobs:
 
       - run: npm run coverage
 
-      - run: mv coverage $CIRCLE_ARTIFACTS/coverage
+      - run: cp -r coverage $CIRCLE_ARTIFACTS/coverage
