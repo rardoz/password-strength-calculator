@@ -1,0 +1,12 @@
+node_modules
+badges
+.vscode
+test
+.babelrc
+.eslintrc
+.npmignore
+.nvmrc
+junit.xml
+.git
+package-lock.json
+.circleci
