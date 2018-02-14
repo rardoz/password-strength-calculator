@@ -34,7 +34,9 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run:
-          name: Jest Suite
-          command: "npm run test:ci"
-          environment:
-            JEST_JUNIT_OUTPUT: "reports/junit/js-test-results.xml"
+          name: Check linters
+          command: "npm run lint"
+
+      - run:
+          name: Coverage Report
+          command: "npm run coverage"
