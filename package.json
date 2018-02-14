@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run lint && jest --no-cache",
+    "coverage": "jest --no-cache --coverage",
     "build": "babel src/index.js --out-file index.js",
     "prepublish": "npm test && npm run build",
     "postpublish": "rm -rf index.js",

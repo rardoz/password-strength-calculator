@@ -35,3 +35,7 @@ jobs:
         
       # run tests!
       - run: npm test
+
+      - run: npm run coverage
+
+      - run: mv coverage $CIRCLE_ARTIFACTS/coverage
